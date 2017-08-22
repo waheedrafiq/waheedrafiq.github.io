@@ -1,0 +1,70 @@
+<!-- Create a button that increases the age of your person   --> 
+<html>
+<head>
+<title>DOM 1</title>
+</head>
+
+
+<script type="text/javascript">
+   
+         
+		 function makeParagraph(){
+                        var para = document.createElement("p");
+                        var node = document.createTextNode("This is new.");
+                        para.appendChild(node);
+                        var element = document.getElementById("div1");
+                        element.appendChild(para);
+		 
+		 }
+
+         function  changeText(){
+                document.getElementById("myText").value = "Johnny Bravo";
+          
+            
+         }
+
+        function deleteParagrah(){
+               
+                        document.getElementById("p").innerHTML = "";
+                
+
+        }
+
+        
+
+   
+   
+  
+</script>
+
+<body>
+ 
+                <div id="div1">
+                <p id="p1">This is a paragraph.</p>
+                <p id="p2">This is another paragraph.</p>
+                </div>
+                <p id="p">
+                                Cool Dude
+                </p>
+
+        <input type="button" value="Create New Paragraph" onclick="makeParagraph()">
+        <hr>
+
+
+
+        <form>
+                <input type="text" name="firstname" id="myText">
+                <br></br>
+                <input type="button" value="Change text" onclick="changeText()" id="myText">
+        </form>
+        <hr>
+
+        <input type="button" value="Delete Paragraph" onclick="deleteParagrah()">
+
+    
+   
+</body>
+
+
+
+</html>
