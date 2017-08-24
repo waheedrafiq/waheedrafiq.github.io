@@ -4,7 +4,7 @@
     let index =0;
     let chkInStatus = false;
      
-    function RefreshVehicleList(){
+    function refreshVehicleList(){
         let select = document.getElementById("selectRegnumber"); 
      
 
@@ -21,8 +21,8 @@
        }
      } // end of populateOption
 
-  
-     function CreateNewCar(){
+    
+     function createNewCar(){
        
         // get values from input box create new vehicles
         let regNopass = document.getElementById("myRegNo").value;
@@ -40,7 +40,7 @@
         vehicleList.push({regNo : regNopass , model : modelPass, repaircost : repairCost,
          typeRepair: typeRepairpass, checkInStatus: false });
 
-         RefreshVehicleList();
+         refreshVehicleList();
          console.log(vehicleList.length);
 
 
@@ -57,10 +57,10 @@ function chkOutCar(){
         // print out to the text area 
         document.getElementById("myCheckOutArea").innerHTML = `Vehicle checkout: ${regNopass} ${modelPass}  ${repairCost}   ${typeRepairpass}`;
         document.getElementById("myCheckInArea").innerHTML = "";
-       vehicleList["regNo"] = regNopass;
-       vehicleList["model"] = modelPass;
-       vehicleList["repaircost"] = repairCost;
-       vehicleList["typeRepair"] = typeRepairpass;
+        vehicleList["regNo"] = regNopass;
+        vehicleList["model"] = modelPass;
+        vehicleList["repaircost"] = repairCost;
+        vehicleList["typeRepair"] = typeRepairpass;
        
        // let index;
         vehicleList.forEach(function(element){
@@ -82,7 +82,7 @@ function chkOutCar(){
             
               console.log("reg has been removed");
               console.log("Array Index left:" + vehicleList.length);
-              RefreshVehicleList();
+              refreshVehicleList();
          }
         
            
@@ -90,7 +90,7 @@ function chkOutCar(){
 
    
 
-function Cal(){
+function cal(){
         
         vehicleList.forEach(function(element){
 
@@ -112,7 +112,7 @@ function Cal(){
 }// calulate method 
 
      // use for check in 
-       function SelectRegNoFromList(){
+       function selectRegNoFromList(){
 
              vehicleList.forEach(function(element){
                  console.log("trigger by SelectREG.");
@@ -124,7 +124,7 @@ function Cal(){
              
        }
     
-      function AdminConsole(choice){
+      function adminConsole(choice){
            
         choice = document.getElementById("AdminCommand").value;
         let sQuery = choice.split(" ");
@@ -148,46 +148,48 @@ function Cal(){
 
                 break;
             case "checkin":
-                     let tmpCar1 = {}
-                     tmpCar1["regNo"] = sQuery[1];
-                     vehicleList.forEach(function(element){
-                        if(document.getElementById(sQuery[1]).value === element["regNo"]){
-                            index =vehicleList.indexOf(element);
-                            console.log("Checkin IF:");
-                            
+                console.log("checkin: " + sQuery[1]); 
+                //let searchValue = sQuery[1];
+                 index=0;
+                vehicleList.forEach(function(element){
+                        if(vehicleList[index].regNo === sQuery[1]){
+
+                            vehicleList[index].checkInStatus = true;  
+                        
+                            document.getElementById("myConsoleOutput").innerHTML =`Vehicle has been checked In: ${vehicleList[index].regNo}`;
                         }
-            
+                        index++;
 
                      },this);
-                     if(index > -1){
-                        console.log("CheckIn : " + vehicleList[index].regNo);
-
-
-                     }
-
-                     //tmpCar["checkInStatus"] = True;
-                     //vehicleList.push(tmpCar);
-            document.getElementById("myConsoleOutput").innerHTML ="Check in commands";
-                      
+                     
+                     console.log(vehicleList); 
                  break;
-            case "checkOut":
-            document.getElementById("myAdminQuery").innerHTML ="check Out command";
+            case "checkout":
+
+            index=0;
+            vehicleList.forEach(function(element){
+                    if(vehicleList[index].regNo === sQuery[1]){
+
+                        document.getElementById("myConsoleOutput").innerHTML =`Vehicle has been checked out: ${vehicleList[index].regNo}`;
+                         vehicleList.splice(index,1); // remove vehicle  
+                    
+                        
+                    }
+                    index++;
+
+                 },this);
+                 
+                 console.log(vehicleList);            
             break;
+
             default: 
             document.getElementById("myConsoleOutput").innerHTML= "Enter a default command ";
 
         }// end of the menu switch statement 
 
 
-        //for debug purpose 
-        function PrintArrayList(){
-          
-            vehicleList.forEach(function(element){
-                    console.log(vehicleList.regNo);
-            });
-
-        }
-      }
+        
+    } // end of console 
      
    
     
