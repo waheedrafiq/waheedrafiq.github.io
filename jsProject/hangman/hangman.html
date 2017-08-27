@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>The Hangman Game</title>
+<style type="text/css">
+textarea {
+   font-size: 10pt;
+   font-family: Arial;
+} 
+</style>
+</head>
+<body>
+
+    <centre><h1>Hangman Game</h1></centre>
+<p></p>
+    
+
+Guess one Character:<input type=text id="userInput" ><br></br>
+
+<br></br>
+
+<input type="button"  onclick="checkGuessCharacter()" name="computerplay " value="Guess a Character ?">
+<br></br>
+
+Correct guess so far:
+<form id="FrmFeedBack">
+       
+        <textarea id="correctguess" cols="30" rows="8">
+            
+        </textarea>
+        
+           <p></p>
+         <textarea id="feedback"  cols="30" rows="8"  style="overflow: scroll;">
+             System feedback
+         </textarea>
+         
+ </form>
+<hr>
+
+
+<p></p>
+System:
+<form id="FrmResult">
+       
+        <textarea id="mySystemConsole"  cols="50" rows="10" >
+            Console output:
+
+        </textarea>     
+</form>
+
+
+Draw Hangman
+<form id="FrmDrawHangman">
+       
+        <textarea id="myDrawHangman"  cols="45" rows="10" >
+       
+
+        </textarea>     
+</form>
+
+
+
+<br></br>
+<script type="text/javascript" src="hangman.js"> </script>    
+</body> 
+
+</html>
