@@ -1,0 +1,5 @@
+Data Source=DESKTOP-F32P42J;Initial Catalog=EPOSv2;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=False;TrustServerCertificate=True
+
+
+
+Data Source=DESKTOP-F32P42J;Initial Catalog=EPOSv2;Integrated Security=True

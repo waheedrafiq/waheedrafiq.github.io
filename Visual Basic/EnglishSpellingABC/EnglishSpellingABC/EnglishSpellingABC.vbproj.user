@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PublishUrlHistory>ftp://ftp.waheedrafiq.com/software/|ftp://ftp.waheedrafiq.com/www/software/|ftp.waheedrafiq.com\software\|C:\WindowsMarket\New_Install\|ftp://ftp.waheedrafiq.com/</PublishUrlHistory>
+    <InstallUrlHistory>http://www.waheedrafiq.com/software/|http://www.waheedrafiq.com/www/software/|http://www.waheedrafiq.com/Waheed_Rafiqs_website/software/EnglishSpellingABC_app/|\\localhost\Users\waheedrafiq\Downloads\Windows_Market\Deploy\EnglishSpellingABC_app\|\\localhost\waheedrafiq\SkyDrive\Windows_Market\Deploy\EnglishSpellingABC_app\</InstallUrlHistory>
+    <SupportUrlHistory>http://www.waheedrafiq.com/software/EnglishSpellingABC.htm|http://www.waheedrafiq.com/Waheed_Rafiqs_website/software/EnglishSpellingABC.htm</SupportUrlHistory>
+    <UpdateUrlHistory>http://www.waheedrafiq.com/Waheed_Rafiqs_website/software/EnglishSpellingABC_app/|http://localhost/EnglishSpellingABC/</UpdateUrlHistory>
+    <BootstrapperUrlHistory />
+    <ErrorReportUrlHistory />
+    <FallbackCulture>en-US</FallbackCulture>
+    <VerifyUploadedFiles>true</VerifyUploadedFiles>
+  </PropertyGroup>
+</Project>
