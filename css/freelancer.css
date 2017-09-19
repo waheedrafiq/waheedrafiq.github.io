@@ -448,3 +448,8 @@ footer {
 .btn:active,
 .btn:focus {
   outline: none; }
+
+.mark {
+    background-color: yellow;
+    color: black;
+}
