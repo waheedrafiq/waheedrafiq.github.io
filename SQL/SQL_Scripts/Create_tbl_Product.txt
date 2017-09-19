@@ -1,8 +1,0 @@
-CREATE TABLE [dbo].[tbl_Product]
-(
-	Product_ID int IDENTITY(1,1) PRIMARY KEY, 
-	Product_Description varchar(255),
-	Product_SN varchar(100),
-	Product_version varchar(100),
-	Product_Cost  DECIMAL(5,2) 
-)

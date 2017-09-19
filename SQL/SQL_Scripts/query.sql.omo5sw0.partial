@@ -1,7 +1,0 @@
-create table users
-(
-   user_ID int IDENTITY(1,1) PRIMARY KEY,
-   Fname varchar(100),
-   Sname varchar(100),
-   userImage varbinary(max)
-);
