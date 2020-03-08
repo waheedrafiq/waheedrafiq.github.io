@@ -1,608 +1,105 @@
 <!DOCTYPE html>
-<html lang="en">
-
-  <head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Waheed Rafiq</title>
-    <style>
-      mark { 
-          background-color: yellow;
-          color: black;
-      }
-      </style>
-  
-  
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom fonts for this template -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
-
-    <!-- Custom styles for this template -->
-    <link href="css/freelancer.min.css" rel="stylesheet">
-
-  </head>
-
-  <body id="page-top">
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-      <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top">Waheed Rafiq</a>
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          Menu
-          <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Coding Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
-            </li>
-          </ul>
+<html>
+    <head>
+          <meta charset="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <title>Developer Profile</title>
+          <script src="https://kit.fontawesome.com/722121cb5c.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.css" />
+          <link rel="stylesheet" href="css/site.css" />
+    </head>
+    <body>
+<!--This navbar works great  -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <a  id="logo" href="index.html" class="navbar-brand"><img id="postionimg"  src="images/codelogo.png" height="30" width="30"></a>
         </div>
-      </div>
-    </nav>
+        <div class="mynav_navbar">
+            <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>&nbsp;Home</a>
+            <!-- dropdown menu 1 futher plans  -->
+            <a href="CareerPlan.html"><i class="fas fa-chart-line" aria-hidden="true"></i>&nbsp; Career Plan</a>
 
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <img class="img-fluid" src="img/waheed.jpg" alt="">
-        <div class="intro-text">
-          <span class="name">Waheed Rafiq</span>
-          <hr class="star-light">
-          <span class="skills">Software Developer </span>
-        </div>
-      </div>
-    </header>
+            <!-- dropdown menu 2 -->
+            <a href="Portfolio.html"><i class="fas fa-user-secret" aria-hidden="true"></i>&nbsp;Portfolio</a>
+           
 
-    <!-- Portfolio Grid Section -->
-    <section id="portfolio">
-      <div class="container">
-        <h2 class="text-center">Coding Projects</h2>
-        <hr class="star-primary">
-        <div class="row">
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal1" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
+            <!-- dropdown menu 3 -->
+            <div class="mynav_dropdown">
+                <button class="mynav_dropbtn">
+                    <i class="fab fa-app-store"></i>&nbsp;
+                    Free Apps
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="mynav_dropdown-content">
+                    <a href="EducationSoftware.html"><i class="fa fa-bus" aria-hidden="true"></i>&nbsp;Education Software </a>
+                    <a href="EnterpriseSoftware.html"><i class="fa fa-code" aria-hidden="true"></i>&nbsp;Enterprise Software</a>
+                    <a href="EthicalSoftware.html"><i class="fa fa-code-fork" aria-hidden="true"></i>&nbsp;Ethical Software</a>
                 </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/js.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal2" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/CSharp.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal3" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/SQL.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal4" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/visualBasic.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal5" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/java.png" alt="">
-            </a>
-          </div>
-          <div class="col-sm-4 portfolio-item">
-            <a class="portfolio-link" href="#portfolioModal6" data-toggle="modal">
-              <div class="caption">
-                <div class="caption-content">
-                  <i class="fa fa-search-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/portfolio/opencv.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- About Section -->
-    <section class="success" id="about">
-      <div class="container">
-        <h2 class="text-center">About</h2>
-        <hr class="star-light">
-        <div class="row">
-          <div class="col-lg-4 ml-auto">
-            <p>An I.T Consultant, who offers a variety of services from Building Networks, to writing Windows Phone Applications. In recent years Waheed has been certified in MCP Server 2012 and Windows 8 Workstation. Additionally, he has successfully completed his Foundation Degree in Computer Science{FDSc} course and obtained a first class. He has also accomplished the Cisco CCNA. 
-              
-              He  has a vast amount of experience in programming and has currently completed  BSc (Hons) in Computer Science with a First . A talented research student in Computer Vision OpenCV , amongst his other skills he is able to write programs in C# , C/C++ , ASP.NET , VB.NET , Java and JavaScript.
-              ​.</p>
-          </div>
-          <div class="col-lg-4 mr-auto">
-            <p>During Waheed Rafiq's ICT Foundation Degree course as part of his degree project, he developed an Ordering Processing System {O.P.S} for a catering company  called RZ Mega Foods and Catering Services.  
-              The company was using a manual receipt system which has now been replaced by O.P.S. The App is written in C#.</p>
-          </div>
-          <div class="col-lg-8 mx-auto text-center">
-            <a href="#" class="btn btn-lg btn-outline">
-              <i class="fa fa-download"></i>
-              Download Theme
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="container">
-        <h2 class="text-center">Contact Me</h2>
-        <hr class="star-primary">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
-            <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
-            <form name="sentMessage" id="contactForm" novalidate>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Name</label>
-                  <input class="form-control" id="name" type="text" placeholder="Name" required data-validation-required-message="Please enter your name.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Email Address</label>
-                  <input class="form-control" id="email" type="email" placeholder="Email Address" required data-validation-required-message="Please enter your email address.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Phone Number</label>
-                  <input class="form-control" id="phone" type="tel" placeholder="Phone Number" required data-validation-required-message="Please enter your phone number.">
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <div class="control-group">
-                <div class="form-group floating-label-form-group controls">
-                  <label>Message</label>
-                  <textarea class="form-control" id="message" rows="5" placeholder="Message" required data-validation-required-message="Please enter a message."></textarea>
-                  <p class="help-block text-danger"></p>
-                </div>
-              </div>
-              <br>
-              <div id="success"></div>
-              <div class="form-group">
-                <button type="submit" class="btn btn-success btn-lg" id="sendMessageButton">Send</button>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="text-center">
-      <div class="footer-above">
-        <div class="container">
-          <div class="row">
-            <div class="footer-col col-md-4">
-              <h3>Birmingham</h3>
-              
-                <br>United Kingdom</p>
             </div>
-            <div class="footer-col col-md-4">
-              <h3>Around the Web</h3>
-              <ul class="list-inline">
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="https://www.facebook.com/MrCoolTech">
-                    <i class="fa fa-fw fa-facebook"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="https://plus.google.com/u/0/+WaheedRafiq">
-                    <i class="fa fa-fw fa-google-plus"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="https://twitter.com/waheedrafiq33?lang=en">
-                    <i class="fa fa-fw fa-twitter"></i>
-                  </a>
-                </li>
-                <li class="list-inline-item">
-                  <a class="btn-social btn-outline" href="https://www.linkedin.com/in/waheerafiq/?originalSubdomain=uk">
-                    <i class="fa fa-fw fa-linkedin"></i>
-                  </a>
-                </li>
-                 
-              </ul>
+            <!-- drop down menu 4 -->
+            <div class="mynav_dropdown">
+                <button class="mynav_dropbtn">
+                    <i class="fas fa-project-diagram"></i>&nbsp;
+                    Coding Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="mynav_dropdown-content">
+                    <a href="OpenCVP.html"><i class="fab fa-opencart"></i>&nbsp;OpenCV</a>
+                    <a href="JavaScriptP.html"><i class="fab fa-js"></i>&nbsp;Java Scripts</a>
+                    <a href="JavaP.html"><i class="fab fa-java" aria-hidden="true"></i>&nbsp;Java</a>
+                    <a href="CSharp.html"><i class="fas fa-laptop" aria-hidden="true"></i>&nbsp;C#</a>
+                    <a href="PythonP.html"><i class="fab fa-python" aria-hidden="true"></i>&nbsp;Python</a>
+                </div>
             </div>
-            
-          </div>
+            <!-- end of your drop down menu -->
+            <a href="About.html">About Me</a>
         </div>
-      </div>
-      <div class="footer-below">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              Copyright &copy; Waheed Rafiq 2018
-            </div>
-          </div>
-        </div>
-      </div>
-    </footer>
-
-    <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
-    <div class="scroll-top d-lg-none">
-      <a class="btn btn-primary js-scroll-trigger" href="#page-top">
-        <i class="fa fa-chevron-up"></i>
-      </a>
     </div>
+</nav>
+<!-- end of main navbar  -->
+<main>
 
-    <!-- Portfolio Modals -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
+    <div class="container">
+
+
+        <div class="row mt-5 pt-5">
+            <div>
+                <p>
+
+                    <img class="img_h_text_wrap" src="images/focus_group.png" height="300" width="300" />
+                    ​Focus Group for the Visually Impaired
+                    taken at Beacon Blind Centre, for
+                    Waheed Rafiq's research into  Computer Vision.
+                </p>
+
+                <p>
+
+                    An I.T Consultant, who offers a variety of services from Building Networks, to writing mobile phones Applications.
+
+                    <br />In recent years Waheed has been certified in MCP Server 2012 and Windows 8 Workstation. Additionally, he has successfully
+                    <br />completed his Foundation Degree in Computer Science{FDSc} course and obtained a first class Hons degree. He has also
+                    <br /> accomplished the Cisco CCNA during this his foundation year. After which he decided to do BSc(Hons) in Computer Science
+                    <br />from which he obtain in 2017 1st Hon's degree.
+
+                </p>
+
+                <p>
+                    He  has a vast amount of experience in programming and has taken on project works such as KEENs project with Birmingham City University. <br />
+                    Where his role was to Project Manage ERP system for Alwayse Engineering Ltd. During which he develop a database software that help the company<br />
+                    reduce their stock waste.<br />
+
+                    A talented research student in Computer Vision OpenCV , amongst his other skills he is able to write programs in C# , C/C++ , ASP.NET , VB.NET and HTML.
+
+                <p />
+
             </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Beginners Java Script Projects</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/js.png" alt="">
-                  <p>Each Project is written in HTML and JavaScript has been applied. At each interval the difficult of the task has been increase.
-                    <a href="jsProject/String.html">JavaScript working with String1</a>.<br></br>
-                    <a href="jsProject/String2.html">JavaScript working with String2</a>.<br></br>
-                    <a href="jsProject/Array1.html">JavaScript working  with Array1</a>.<br></br>
-                    <a href="jsProject/CheckAge.html">JavaScript Example of validating Age</a>.<br></br>
-                    <a href="jsProject/Loop1-10.html">JavaScript Example Loop 1-10</a>.<br></br>
-                    <a href="jsProject/LoopCheck2.html">JavaScript Example Loop 2</a>.<br></br>
-                    <a href="jsProject/FuzzBuzz.html">JavaScript Example of FuzzBuzz</a>.<br></br>
-                    <a href="jsProject/Iteration4.html">JavaScript Example of Iteration</a>.<br></br>
-                    <a href="jsProject/chkTriple.html">JavaScript Example Check Triple</a>.<br></br>
-                    <a href="jsProject/DOM.html">JavaScript Example of DOM</a>.<br></br>
-                    <a href="jsProject/JasonBasicPrint.html">JavaScript Basic Jason</a>.<br></br>
-                    <a href="jsProject/JsonBasic.html">JavaScript Example Jason Search</a>.<br></br>
-                    <a href="jsProject/GarageAdmin.html">Project Garage Admin</a>.<br></br>
-                    <a href="jsProject/Garage.html">Project Garage </a>.<br></br>
-                    <a href="jsProject/garage.js">Project Garage  JavaScript file</a>.<br></br>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">September 2017</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>C# Projects</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/CSharp.png" alt="">
-                  <p>In this section of the website , you will find some example of C# code and Projects feel free to explore and get intouch if you require any futher details. Some project are password protected.</p>
-                     Basic CRUD example in C# Create ,Read ,Update and Delete from text file <a href="https://github.com/waheedrafiq/CSharp/tree/master/CRUD-example">CRUD Example</a><br></br>
-                     Check it out basic example of how to use Abstract Class.<a href="CSharp/AbstractClassExample.zip">Abstract Class Example</a><br></br>
-                     Coding done in 48 hours at Aston Hack a EPIC weekend <a href="CSharp/AstonHack-game.zip">Aston Hack Weekend Project</a><br></br>
-                     Code example of how to use Struct  <a href="CSharp/bookStruct.zip">Book Struct example</a><br></br>
-                     Code example of a random application <a href="CSharp/codeProjectExample.zip">Random Application</a><br></br>
-                     Code example of how to use Polymorphism <a href="CSharp/ConsolePolymorphism.zip">Polymorphism</a><br></br>
-                     Code example of how to Play around with  Cortana <a href="CSharp/CustomCortannaCommands.zip">Cortana</a><br></br>
-                     How to draw a rectangle <a href="CSharp/DrawRectangle.zip">Draw Rectangle</a><br></br>
-                     My assignment  Project for FDSc degree a Website so important that I told myself not to touch it lol  <a href="CSharp/FINAL WEBSITE - DO NOT TOUCH.zip">WebSite</a><br></br>
-                     More example of Inheritance and Polymorphism <a href="CSharp/Inheritance-Polymorphism.zip">More examples Inheritance and Polymorphism</a><br></br>
-                     BSc(Hons) 2nd year assignment project on Litres and Gallons conversion <a href="CSharp/LitresGallonsApplication.zip">Litres and Gallons</a><br></br>
-                     My example of extended methods <a href="CSharp/MyExtendedMethods.zip">My extend methods example</a><br></br>
-                     <span style="background-color: #FFFF00"> Short Interview process test on reading file and returning some values</span> <a href="CSharp/PersonCalAverageAge.zip">Average Age</a><br></br>
-                   
-                     Another good example of Polymorphism <a href="CSharp/PolymorphismExample.zip"> Another example of Polymorphism</a><br></br>
-                     Good application if you want to shut your pc down via application <a href="CSharp/ShutDownPC.zip">Shut Down PC</a><br></br>
-                     BSc(Hons) second year project also password protected 'SoundDex the EPIC' <a href="CSharp/SounddexApplication_S13189954.zip">SoundDex EPIC</a><br></br>
-                     Final year Project BSc(Hons) XploR cane Registration System "Please google 'XploR Cane' password protected <a href="CSharp/WebApplication.zip">XploR Cane Registration</a><br></br>
+    </div><!-- main div -->
+</main>
 
 
 
-
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">September 2017</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>SQL Projects</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/SQL.png" alt="">
-                  <p>In this section of the website you will find wealth of SQL Scripts that were created during my Degree course.</P>
-                    During my FdSc degree I leart  Relational Databases with SQL; I had to do a assignment to proof that I understood the theory check it out: <a href="SQL/AssignmentSQL.zip">SQL Assignment</a><br></br>
-                    Good example of the Basic SQL Scripts covered in the course: <a href="SQL/BasicSQL.zip">SQL Basic Scripts</a><br></br>
-                    Small projects base on SQL : <a href="SQL/SmallProjectSQL.zip">Small Projects</a><br></br>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">September 2017</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Visual Basic Projects</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/visualBasic.png" alt="">
-                  <p>Some of Visual Basic Projects  coded in VB.NET framework</p>
-                   Adult learning is becoming more popular and most adult find spelling hard. I wanted to trackle this problem as I am dyslexic; check out my EnglishSpellingABC application and some help documentation <a href="VisualBasic/EnglishSpellingABC.zip">English Spelling ABC</a><br></br>
-                   Love creating games check out my Epic Guessing Game; <a href="VisualBasic/GuessingGame.zip">Guessing Game</a><br></br>
-                   Good example of how to access Files from the Windows system: <a href="VisualBasic/RandomFileAccessApp.zip">Random File Access</a><br></br>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">September 2017</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>Java Projects</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/java.png" alt="">
-                  <p>After completing my degree , I continue in futhering my skills by learning Java.</p>
-                    Basic example of Java Operators<a href="java/BasicOperators.zip">Java Operators </a>.<br></br>
-                    Black Jack game in Java Console <a href="java/BlackJack.zip">Black Jack </a>.<br></br>
-                    Garage project in Java  <a href="java/Garage.zip">Garage project </a>.<br></br>
-                    First stage of playing around with JavaFx Swing GUI <a href="java/JavaGUI.zip">Java GUI </a>.<br></br>
-                    Good example of how to connect to SQL database in Java <a href="java/JavaSQL.zip">Java SQL </a>.<br></br>
-                    Small three project example with Junit <a href="java/jUnit.zip">JUnit Testing </a>.<br></br>
-                    <span style="background-color: #FFFF00"> Library Project example <a href="java/LibraryProject.zip">Library Project </a>.<br></br></span>
-                    Paint Wizard application  <a href="java/PaintWizard.zip">Paint Wizard </a>.<br></br>
-                    Application illustrating the use of Inheritance <a href="java/PersonalDetails.zip">Personal Details </a>.<br></br>
-                    Great example of working out temperature <a href="java/TooHot.zip">Too Hot or Cold  </a>.<br></br>
-                    Console application working out Unique Sum <a href="java/UniqueSUm.zip">Java SQL </a>.<br></br>
-                    Everyone's subject 'working with files' <a href="java/WorkingWithFiles.zip">Working with Files </a>.<br></br>
-
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">September 2017</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-              <div class="rl"></div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 mx-auto">
-                <div class="modal-body">
-                  <h2>OpenCV Projects</h2>
-                  <hr class="star-primary">
-                  <img class="img-fluid img-centered" src="img/portfolio/opencv.png" alt="">
-                  <p>Use this area of the page to describe your project. The icon above is part of a free icon set by
-                   During my FdSc degree I leart  Relational Databases with SQL; I had to do a assignment to proof that I understood the theory check it out: <a href="SQL/AssignmentSQL.zip">SQL Assignment</a></p><br></br>
-                  <ul class="list-inline item-details">
-                    <li>Client:
-                      <strong>
-                        <a href="http://startbootstrap.com">Start Bootstrap</a>
-                      </strong>
-                    </li>
-                    <li>Date:
-                      <strong>
-                        <a href="http://startbootstrap.com">April 2014</a>
-                      </strong>
-                    </li>
-                    <li>Service:
-                      <strong>
-                        <a href="http://startbootstrap.com">Web Development</a>
-                      </strong>
-                    </li>
-                  </ul>
-                  <button class="btn btn-success" type="button" data-dismiss="modal">
-                    <i class="fa fa-times"></i>
-                    Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/popper/popper.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-
-    <!-- Custom scripts for this template -->
-    <script src="js/freelancer.min.js"></script>
-
-  </body>
-
+</body>
 </html>

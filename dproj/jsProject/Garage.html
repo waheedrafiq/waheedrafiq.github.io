@@ -1,0 +1,62 @@
+<!-- Create Garage      --> 
+<html>
+<head>
+<title>Garage Where Repairs happen.</title>
+</head>
+
+
+
+
+<body>
+<p></p>
+<hr></hr>
+    <form>
+        RegNo:&nbsp&nbsp&nbsp&nbsp<input type="text" name="RegNo" id="myRegNo"><br></br>
+        Model:&nbsp&nbsp&nbsp&nbsp<input type="text" name="Model" id="myModel"><br></br>
+        Repair Cost:<input type="text" name="RepairCost" id="myrepairCost"><br></br>
+        Type of Repair:&nbsp&nbsp&nbsp<input type="text" name="typRepair" id="mytypRepair"><br></br>
+        <input type="button"  onclick="createNewCar()"  value="Register New Vehicle">   
+    </form>
+<hr></hr>
+
+
+<input type="button"  onclick="cal()"name="Calculate " value="Total Cost of Bill">
+<input type="button"  onclick="selectRegNoFromList()"name="selectFromlist " value="Select From List">
+
+<p>
+
+</p> 
+<h1>List of Registered Vehicle</h1>
+<form id="FrmCheckIn">
+Select from drop down RegNo for CheckIn OR <br></br> 
+Select RegNo from Drop down and click on Check out Vehicle button for Check Out!:<br><select id="selectRegnumber" onchange="selectRegNoFromList()">
+    
+  </select>
+  <p></p>
+<textarea id="myCheckInArea"  cols="45" rows="10"  style="overflow: scroll;">
+    Demo area 
+</textarea>
+
+</form>
+
+
+
+<!-- do be used in the upgrade version --> 
+
+
+
+  CheckOut:<br>
+  <textarea id="myCheckOutArea"  cols="45" rows="10"  style="overflow: scroll;"  >
+      Demo area check out
+  </textarea>
+  
+<input type="button" name="CheckOutCar" value =" Check out vehicle" id="myModel" 
+onclick="chkOutCar()" >
+
+<hr>
+
+
+
+<script type="text/javascript" src="garage.js"> </script>
+</body>
+</html>

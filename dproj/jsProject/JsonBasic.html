@@ -1,0 +1,57 @@
+<!-- Create JavaScript accessing Json file Search box     --> 
+<html>
+<head>
+<title>Basic Jason</title>
+</head>
+
+
+<script type="text/javascript">
+   
+        function getJason(mysearch){
+          var searchField = "nm";
+          var searchVal = mysearch;  
+         var requestURL ='https://raw.githubusercontent.com/ewomackQA/JSONDataRepo/master/kings.json';
+         var request = new XMLHttpRequest();
+         request.open('GET',requestURL);
+         request.responseType ='json';
+         document.write(requestURL);
+         request.send();
+
+         request.onload = function() {
+            var requestData = request.response;
+            var myH1 = document.createElement('h1');
+            myH1.textContent = requestData[0][0];
+         
+           
+            for(var i=0; i < requestData.length; i++)
+            {
+                if(requestData[i][searchField]==searchVal) 
+                {   
+                    document.write("Search has found: " + requestData[i]['nm']);
+                    document.write("<br></br>");
+                    document.write(requestData[i]['cty'] + " " + requestData[i]['hse']);
+                    
+                }
+            }
+            document.getElementsByTagName('head')[0].appendChild(myH1);
+
+         }
+        } // end of getJason 
+        
+		 getJason("Harold II");
+
+   
+   
+  
+</script>
+
+<body>
+    <p id=myH1></p>
+               
+    
+   
+</body>
+
+
+
+</html>

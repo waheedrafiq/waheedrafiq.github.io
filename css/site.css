@@ -1,0 +1,468 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+
+
+
+
+
+body {
+    background-image: url(../images/background11.jpg);
+    background-size:cover;
+
+    background-position: initial;
+ 
+    box-sizing: border-box;
+
+    padding-top: 60px;
+    padding-bottom: 25px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh;
+    
+
+
+}
+
+
+/* Wrapping element */
+/* Set some basic padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+
+  
+}
+
+
+   
+/* Carousel 
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
+}
+
+/* Make .svg files in the carousel display properly in older browsers */
+.carousel-inner .item img[src$=".svg"] {
+    width: 100%;
+}
+
+/* QR code generator */
+#qrCode {
+    margin: 15px;
+}
+
+/* Hide/rearrange for smaller screens */
+@media screen and (max-width: 767px) {
+    /* Hide captions */
+    .carousel-caption {
+        display: none;
+    }
+}
+/*Nav bar style */
+
+mynav_navbar {
+    overflow: hidden;
+    background-color: #007bff;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+
+.mynav_navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+
+.mynav_dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+
+
+    .mynav_dropdown .mynav_dropbtn {
+        font-size: 16px;
+        border: none;
+        outline: none;
+        color: white;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+
+
+    .mynav_navbar a:hover, .mynav_dropdown:hover .mynav_dropbtn {
+        background-color: #0b98de;
+    }
+
+
+
+.mynav_dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+
+
+    .mynav_dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+
+
+        .mynav_dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+
+
+.mynav_dropdown:hover .mynav_dropdown-content {
+    display: block;
+}
+
+.navbar-inverse {
+    background-color: #007bff;
+}
+
+
+/*.navbar-brand {
+    background-image: url(../images/codeLogo.jpg);
+    background:repeating-linear-gradient();
+}*/
+
+
+/* Style Vehicle Tracker Page */
+
+
+
+
+
+
+#logo {
+    font-family: 'Hind', sans-serif;
+    font-size: 30px;
+    letter-spacing: -2px;
+    text-shadow: 1px 1px 2px #c4c4c4;
+    padding-left: 20px;
+    padding-right: 40px;
+    margin-right: 10px;
+    margin-top: -6px;
+ 
+}
+
+
+
+.container {
+    /*margin-left: 15px !important;
+    width:auto !important;*/
+    
+    position:relative !important;
+    /*width:900px !important;*/
+    display:flex !important;
+    justify-content:space-around !important;
+}
+
+.container .card
+{
+    position:relative;
+    width:2000px;
+    background: linear-gradient(0deg,#1b1b1b,#222,#1b1b1b);
+    display:flex;
+    justify-content:center;
+    /*align-items:centre;*/
+    height:2000px;
+    border-radius:4px;
+    text-align:center;
+    overflow:hidden;
+    transition:0.5s;
+}
+
+.container .card:hover{
+
+    transform:translateY(-10);
+    box-shadow:0 15px 35px rgba(0,0,0,5);
+
+
+}
+
+.container .card:before
+{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100%;
+    /*background: rgba(255,255,255,03);*/
+    pointer-events:none;
+    z-index:1;
+
+
+
+
+}
+
+.percent{
+
+    position:relative;
+    width:150px;
+    height:150px;
+    border-radius:50%; 
+    box-shadow:inset 0 0 50px #000;
+    background:#222;
+    z-index:1000; 
+}
+
+
+.percent .number{
+
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius:50%;
+
+}
+
+.percent .number h2{
+
+    color:#777;
+    font-weight:700;
+    font-size:40px;
+    transition:0.5s; 
+
+
+}
+
+.card:hover .percent .number h2{
+
+    color:#fff;
+    font-size:60px;
+
+
+
+}
+
+.percent .number h2 span {
+   
+    font-size:24px;
+    color:#777;
+    
+}
+
+.card:hover .percent .number h2 span{
+
+    color:#fff;
+
+}
+
+.text{
+
+    margin-top:20px;
+    position:relative;
+    color:#777;
+    font-weight:700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform:uppercase;
+    transition: 0.5s;
+
+}
+
+
+.card:hover .text{
+
+    color:#fff;
+
+}
+
+
+
+    .footer {
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+}
+
+#myFooter{
+    position:center;
+    text-align:center;
+}
+/* style the main context of the page */
+p {
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    text-decoration: none;
+    font-family: 'Myanmar Text';
+}
+
+.my_home_div1 {
+    padding-left: 16px;
+    padding-top: 105px;
+    
+}
+.my_home_div2 {
+    padding-left: 16px;
+    padding-top: 314px;
+    padding-right: 200px;
+}
+
+
+ 
+.img_h_text_wrap{
+
+    float:left;
+
+}
+
+.mydiv_h_rightside {
+    width: 200px;
+
+    height: 300px;
+    background-color: aliceblue;
+    padding-top: 100px;
+
+    margin: 50px;
+    float: right;
+    top: -40px;
+}
+
+.row{
+
+    margin-right:-15px !important;
+    margin-left:-45px !important;
+}
+
+/*   Meter reading */
+ svg{
+
+     position: relative;
+     width:150px;
+     height:150px;
+     z-index:1000;
+
+ }
+
+    svg circle {
+        width: 100%;
+        height: 100%;
+        fill: none;
+        stroke: #191919;
+        stroke-width: 10;
+        stroke-linecap: round;
+        /*background-color: wheat;*/
+        transform: translate(5px,5px);
+    }
+
+ svg circle:nth-child(2){
+
+     stroke-dasharray:450;
+     stroke-dashoffset:450;
+ }
+
+.card:nth-child(1) svg circle:nth-child(2) {
+
+    stroke-dashoffset: calc( 450 - ( 450 * 90) / 100); /* OpenCV page  */
+    stroke: #10e522;
+}
+
+.card:nth-child(2) svg circle:nth-child(2) {
+
+    stroke-dashoffset: calc( 450 - ( 450 * 85 ) / 100);
+    stroke: #0b98de;
+}
+
+.card:nth-child(3) svg circle:nth-child(2) {
+
+
+    stroke-dashoffset: calc( 450 - ( 450 * 60 ) / 100);
+    stroke: #ff6a00;
+}
+
+/* career plan */
+#ip5 {
+    border-radius: 15px 50px;
+    background: #609;
+    padding: 20px;
+    width: 230px;
+    height: 15px;
+    color:white;
+} 
+
+#ipArrow{
+    font-size:100px;
+    color:#609;
+    margin-left:396px;
+}
+
+/*download button */
+.btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+        background-color: RoyalBlue;
+    }
+
+
+    /*image rotate issue */
+.rotateimg180 {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.rotateimg90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.PicLeft {
+
+    margin-left:-200px;
+}
