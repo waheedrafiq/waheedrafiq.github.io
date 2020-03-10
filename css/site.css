@@ -182,7 +182,8 @@ mynav_navbar {
     width:auto !important;*/
     
     position:relative !important;
-    /*width:900px !important;*/
+    width:900px !important;
+  
     display:flex !important;
     justify-content:space-around !important;
 }
@@ -195,7 +196,7 @@ mynav_navbar {
     display:flex;
     justify-content:center;
     /*align-items:centre;*/
-    height:2000px;
+    height:1050px;
     border-radius:4px;
     text-align:center;
     overflow:hidden;
