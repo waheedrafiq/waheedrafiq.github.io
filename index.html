@@ -1,13 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Waheed Rafiq | Developer Profile</title>
-    <script type="module" crossorigin src="/assets/index-pX9480dz.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DUfq7-ws.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Waheed Rafiq — Senior Software Engineer specialising in C#, .NET, APIs, React, Azure and technical leadership.">
+<meta name="theme-color" content="#0b1220">
+<title>Waheed Rafiq | Senior Software Engineer</title>
+<style>
+:root{--bg:#f5f7fb;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--nav:#0b1220;--nav2:#111c31;--blue:#2563eb;--blue2:#60a5fa;--card:#fff;--shadow:0 18px 45px rgba(15,23,42,.08)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.65}
+a{color:inherit;text-decoration:none}button{font:inherit}
+.sidebar{position:fixed;inset:0 auto 0 0;width:290px;background:linear-gradient(180deg,var(--nav),var(--nav2));color:#fff;padding:32px 24px;display:flex;flex-direction:column;z-index:20;box-shadow:8px 0 30px rgba(15,23,42,.10)}
+.profile{text-align:center;padding-bottom:24px;border-bottom:1px solid rgba(255,255,255,.10)}
+.avatar{width:150px;height:150px;border-radius:50%;object-fit:cover;object-position:50% 28%;border:5px solid rgba(255,255,255,.14);box-shadow:0 12px 35px rgba(0,0,0,.32);background:#fff}
+.profile h1{font-size:1.48rem;line-height:1.2;margin:16px 0 6px;letter-spacing:.01em}.profile p{margin:0;color:#cbd5e1;font-size:.95rem}
+.nav{display:grid;gap:7px;margin-top:22px}.nav a{display:flex;align-items:center;gap:12px;padding:11px 14px;border-radius:10px;color:#cbd5e1;font-size:.94rem;transition:.2s}.nav a:hover,.nav a.active{background:linear-gradient(135deg,#1d4ed8,#2563eb);color:#fff;transform:translateX(2px)}
+.dot{width:8px;height:8px;border-radius:99px;background:#60a5fa;box-shadow:0 0 0 4px rgba(96,165,250,.13)}
+.side-footer{margin-top:auto;padding-top:18px;color:#94a3b8;font-size:.78rem;text-align:center}
+.mobile-toggle{display:none;position:fixed;top:16px;right:16px;z-index:30;border:0;border-radius:10px;background:var(--nav);color:#fff;padding:10px 13px;box-shadow:var(--shadow)}
+main{margin-left:290px;min-height:100vh}.wrap{max-width:1220px;margin:0 auto;padding:52px 48px 80px}
+.hero{display:grid;grid-template-columns:1.25fr .75fr;gap:42px;align-items:center;padding:30px 0 48px}
+.kicker{display:inline-flex;align-items:center;gap:10px;text-transform:uppercase;letter-spacing:.16em;color:var(--blue);font-weight:800;font-size:.77rem}
+.kicker:before{content:"";width:28px;height:2px;background:var(--blue)}h2.hero-name{font-size:clamp(3rem,6vw,5.5rem);line-height:.97;letter-spacing:-.055em;margin:14px 0 18px}
+.role{font-size:1.35rem;font-weight:800;color:#1d4ed8;margin:0 0 14px}.role span{font-weight:500;color:#475569}
+.lead{font-size:1.06rem;color:#475569;max-width:760px;margin-bottom:24px}
+.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 18px;border-radius:10px;font-weight:750;border:1px solid #cbd5e1;background:#fff;transition:.2s}.btn.primary{background:linear-gradient(135deg,#1d4ed8,#2563eb);color:#fff;border-color:transparent}.btn:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(37,99,235,.15)}
+.hero-photo{position:relative}.hero-photo img{width:100%;max-width:380px;display:block;margin:auto;border-radius:22px;box-shadow:0 28px 70px rgba(15,23,42,.18);background:#fff}.hero-photo:after{content:"";position:absolute;width:72%;height:72%;right:0;bottom:-18px;background:#dbeafe;border-radius:28px;z-index:-1}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:8px 0 54px}.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;box-shadow:var(--shadow)}.stat strong{display:block;font-size:1.9rem;line-height:1.1}.stat span{display:block;color:#475569;margin-top:5px;font-weight:650;font-size:.88rem}
+.section{padding:36px 0;scroll-margin-top:28px}.section-head{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:20px}.eyebrow{font-size:.76rem;color:var(--blue);text-transform:uppercase;letter-spacing:.16em;font-weight:800}.section h3{font-size:2rem;margin:4px 0 0;letter-spacing:-.025em}.section-head p{max-width:620px;color:var(--muted);margin:0}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:var(--shadow)}.card h4{margin:0 0 8px;font-size:1.07rem}.card p{margin:0;color:#526071}.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}.chip{padding:6px 10px;border-radius:999px;background:#eff6ff;color:#1d4ed8;font-weight:700;font-size:.78rem}
+.skills{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.skill{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px}.skill-top{display:flex;justify-content:space-between;font-size:.9rem;font-weight:750}.bar{height:8px;background:#e2e8f0;border-radius:99px;margin-top:10px;overflow:hidden}.bar i{display:block;height:100%;background:linear-gradient(90deg,#1d4ed8,#60a5fa);border-radius:99px}
+.timeline{display:grid;gap:14px}.job{position:relative;background:#fff;border:1px solid var(--line);border-radius:16px;padding:22px 22px 22px 26px;box-shadow:var(--shadow)}.job:before{content:"";position:absolute;left:0;top:18px;bottom:18px;width:4px;background:linear-gradient(#1d4ed8,#60a5fa);border-radius:0 6px 6px 0}.job-head{display:flex;justify-content:space-between;gap:14px;align-items:start}.job h4{margin:0;font-size:1.08rem}.job .company{color:#1d4ed8;font-weight:800}.job time{white-space:nowrap;color:#64748b;font-size:.85rem}.job ul{margin:12px 0 0;padding-left:18px;color:#526071}
+.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.project{min-height:240px;display:flex;flex-direction:column}.project .num{font-size:.78rem;color:#2563eb;font-weight:850;letter-spacing:.12em}.project h4{font-size:1.2rem;margin:14px 0 8px}.project .link{margin-top:auto;padding-top:18px;color:#1d4ed8;font-weight:800}
+.contact{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;border-radius:24px;padding:34px;display:flex;justify-content:space-between;gap:20px;align-items:center}.contact p{color:#cbd5e1;max-width:650px;margin:7px 0 0}.contact .btn{border-color:rgba(255,255,255,.3);background:#fff;color:#0f172a}
+footer{padding:32px 0 0;color:#94a3b8;font-size:.83rem}
+@media(max-width:1000px){.sidebar{transform:translateX(-100%);transition:.25s}.sidebar.open{transform:translateX(0)}.mobile-toggle{display:block}main{margin-left:0}.wrap{padding:42px 24px 70px}.hero{grid-template-columns:1fr;padding-top:70px}.hero-photo{max-width:440px}.stats{grid-template-columns:repeat(2,1fr)}.projects{grid-template-columns:1fr 1fr}}
+@media(max-width:650px){h2.hero-name{font-size:3.3rem}.stats,.grid2,.skills,.projects{grid-template-columns:1fr}.section-head,.job-head,.contact{display:block}.job time{display:block;margin-top:5px}.contact .btn{margin-top:20px}}
+</style>
+</head>
+<body>
+<button class="mobile-toggle" aria-label="Open navigation" onclick="document.querySelector('.sidebar').classList.toggle('open')">☰</button>
+<aside class="sidebar">
+  <div class="profile">
+    <img class="avatar" src="data:image/webp;base64,UklGRvI...
